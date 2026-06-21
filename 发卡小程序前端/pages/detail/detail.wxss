@@ -1,0 +1,160 @@
+@import "../../styles/glassmorphism.wxss";
+
+.product-header {
+  text-align: center;
+  padding: 20rpx 0;
+}
+
+.progress-section {
+  padding: 30rpx 0;
+}
+
+.progress-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20rpx 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.progress-item:last-child {
+  border-bottom: none;
+}
+
+.progress-label {
+  font-size: 28rpx;
+  color: var(--glass-text-color);
+}
+
+.progress-value {
+  font-size: 32rpx;
+  font-weight: 600;
+  color: var(--glass-primary-color);
+}
+
+.progress-value.highlight {
+  color: var(--glass-success);
+}
+
+.progress-value.warning {
+  color: var(--glass-warning);
+}
+
+.progress-bar-container {
+  margin-top: 30rpx;
+  padding: 20rpx;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 12rpx;
+}
+
+.progress-text {
+  text-align: center;
+  margin-top: 10rpx;
+  font-size: 24rpx;
+  color: var(--glass-text-light);
+}
+
+.intro-section {
+  padding: 30rpx 0;
+}
+
+.section-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 30rpx;
+  font-weight: 600;
+  color: var(--glass-text-color);
+  margin-bottom: 20rpx;
+}
+
+.copy-btn {
+  padding: 8rpx 20rpx;
+  font-size: 24rpx;
+  background: rgba(59, 130, 246, 0.2);
+  color: var(--glass-primary-color);
+  border: 1px solid var(--glass-primary-color);
+  border-radius: 20rpx;
+  line-height: 1.2;
+  margin-left: 420rpx;
+  flex-shrink: 0;
+}
+
+.copy-btn::after {
+  border: none;
+}
+
+.intro-content {
+  font-size: 28rpx;
+  line-height: 1.8;
+  color: var(--glass-text-color);
+  padding: 20rpx;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 12rpx;
+}
+
+.button-container {
+  margin-top: 40rpx;
+  padding: 20rpx 0;
+}
+
+.ad-container {
+  margin-top: 30rpx;
+  border-radius: 16rpx;
+  overflow: hidden;
+}
+
+.Pop-ups {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  display: none;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+}
+
+.Pop-ups.show {
+  display: flex;
+}
+
+.dialog {
+  width: 80%;
+  background: var(--glass-card-bg);
+  backdrop-filter: blur(20rpx);
+  -webkit-backdrop-filter: blur(20rpx);
+  border-radius: 16rpx;
+  border: 1px solid var(--glass-border);
+  overflow: hidden;
+}
+
+.dialog .bar {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 20rpx;
+  border-top: 1px solid var(--glass-border);
+}
+
+.dialog .bar .content {
+  font-size: 32rpx;
+  font-weight: 600;
+  color: var(--glass-text-color);
+  text-align: center;
+  width: 100%;
+}
+
+.dialog .bar .action {
+  flex: 1;
+  background: transparent;
+  border: none;
+  font-size: 28rpx;
+  padding: 20rpx;
+}
+
+.dialog .bar .action::after {
+  border: none;
+}

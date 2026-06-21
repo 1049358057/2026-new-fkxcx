@@ -1,0 +1,100 @@
+.container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 30rpx 0;
+  box-sizing: border-box;
+}
+
+.gzh {
+  width: 90%;
+  margin: 20rpx auto;
+}
+
+.weui-cells__title {
+  margin-top: 15px;
+  margin-bottom: 8px;
+  padding-left: 15px;
+  padding-right: 15px;
+  color: #ff7f24;
+  font-size: 14px;
+  text-align: center;
+}
+
+.is-relative {
+  position: relative;
+}
+
+.clear_10 {
+  height: 10px;
+  clear: both;
+}
+
+.main-content {
+  padding-bottom: 30rpx;
+}
+
+.tutorial-content {
+  padding: 20rpx;
+  position: relative;
+  overflow: hidden;
+}
+
+.tutorial-content::before {
+  content: "";
+  position: absolute;
+  bottom: -30rpx;
+  right: -30rpx;
+  width: 150rpx;
+  height: 150rpx;
+  border-radius: 50%;
+  background: rgba(147, 197, 253, 0.15);
+  z-index: -1;
+}
+
+.tutorial-content::after {
+  content: "";
+  position: absolute;
+  top: -20rpx;
+  left: -20rpx;
+  width: 100rpx;
+  height: 100rpx;
+  border-radius: 50%;
+  background: rgba(59, 130, 246, 0.1);
+  z-index: -1;
+}
+
+.tutorial-content rich-text {
+  width: 100%;
+  word-break: break-all;
+  white-space: pre-wrap;
+  color: var(--glass-text-color);
+  font-size: 28rpx;
+  line-height: 1.6;
+}
+
+.glass-container::before {
+  content: "";
+  position: fixed;
+  top: -100rpx;
+  right: -100rpx;
+  width: 300rpx;
+  height: 300rpx;
+  border-radius: 50%;
+  background: rgba(147, 197, 253, 0.3);
+  z-index: -1;
+}
+
+.glass-container::after {
+  content: "";
+  position: fixed;
+  bottom: -150rpx;
+  left: -150rpx;
+  width: 400rpx;
+  height: 400rpx;
+  border-radius: 50%;
+  background: rgba(59, 130, 246, 0.2);
+  z-index: -1;
+} 

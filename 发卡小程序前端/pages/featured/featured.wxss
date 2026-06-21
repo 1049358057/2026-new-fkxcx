@@ -1,0 +1,48 @@
+@import "../../styles/glassmorphism.wxss";
+
+.glass-container {
+  padding: 20rpx;
+}
+
+.glass-title {
+  font-size: 36rpx;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 20rpx;
+  color: var(--glass-text-color);
+}
+
+.glass-divider {
+  height: 2rpx;
+  background: linear-gradient(90deg, transparent, var(--glass-primary-color), transparent);
+  margin: 30rpx 0;
+}
+
+.app-card {
+  margin-bottom: 30rpx;
+  padding: 30rpx;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.app-card:active {
+  transform: scale(0.98);
+  opacity: 0.8;
+}
+
+.app-image {
+  width: 100%;
+  height: 300rpx;
+  border-radius: 20rpx;
+  margin-bottom: 20rpx;
+}
+
+.app-title {
+  font-size: 32rpx;
+  font-weight: 500;
+  color: var(--glass-text-color);
+  text-align: center;
+}

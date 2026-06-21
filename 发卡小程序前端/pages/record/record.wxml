@@ -1,0 +1,51 @@
+<view class="glass-container">
+  <ad unit-id="adunit-f92b132d9fffeb2d" bindload="adLoad" binderror="adError" bindclose="adClose"></ad>
+  
+  <view class="glass-box gzh">
+    <official-account></official-account>
+  </view>
+  
+  <view class="glass-box main-content glass-fade-in">
+    <view class="glass-title">
+      <text>【获得记录】</text>
+      <text bindtap="copyUser" class="user-id" wx:if="{{userid}}">  
+        用户ID：{{userid}} [点击复制]
+      </text>
+    </view>
+    
+    <view class="glass-divider"></view>
+    
+    <view class="records-list" wx:if="{{recordList.length}}">
+      <view class="glass-card record-item" wx:for="{{recordList}}" wx:key="index">
+        <view class="record-type">
+          <text class="glass-text">【获取类型】：<text class="highlight">{{item.mode==0?'直接获得':''}}{{item.mode==2?'观看广告获得':''}}{{item.mode==3?'观看广告以及分享获得':''}}{{item.mode==null?'未知获得':''}}</text></text>
+        </view>
+        
+        <view class="record-detail">
+          <text class="glass-text">【名称】：<text>{{item.name}}</text></text>
+        </view>
+        
+        <view class="record-detail">
+          <text class="glass-text">【卡密】：{{item.km}}</text>
+        </view>
+        
+        <view class="record-detail">
+          <text class="glass-text">【创建时间】：{{item.usetime}}</text>
+        </view>
+        
+        <view class="record-detail" wx:if="{{item.usetip}}">
+          <text class="glass-text">【使用方法】：{{item.usetip}}</text>
+        </view>
+        
+        <view class="button-group">
+          <button bindtap="copyUsetip" class="glass-button" data-key="{{index}}" size="mini" wx:if="{{item.usetip}}">复制使用方法</button>
+          <button bindtap="copykm" class="glass-button glass-button-primary" data-key="{{index}}" size="mini">复制卡密</button>
+        </view>
+      </view>
+    </view>
+    
+    <view class="empty-notice" wx:if="{{recordList.length===0}}">
+      <text class="glass-text">暂无卡密记录</text>
+    </view>
+  </view>
+</view>

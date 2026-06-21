@@ -1,0 +1,17 @@
+<view class="glass-container">
+  <ad unit-id="adunit-f92b132d9fffeb2d" bindload="adLoad" binderror="adError" bindclose="adClose"></ad>
+  
+  <view class="glass-box gzh">
+    <official-account></official-account>
+  </view>
+  
+  <view class="glass-box main-content glass-fade-in">
+    <view class="glass-title">【使用教程】</view>
+    
+    <view class="glass-divider"></view>
+    
+    <view class="glass-card tutorial-content">
+      <rich-text nodes="{{tutorialContent}}"></rich-text>
+    </view>
+  </view>
+</view> 

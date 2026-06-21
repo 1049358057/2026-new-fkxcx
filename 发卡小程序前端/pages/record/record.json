@@ -1,0 +1,8 @@
+{
+    "enablePullDownRefresh": false,
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#3b82f6",
+    "navigationBarTextStyle": "white",
+    "navigationBarTitleText": "记录",
+    "usingComponents": {}
+}

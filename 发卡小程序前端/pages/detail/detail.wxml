@@ -1,0 +1,76 @@
+<view class="glass-container">
+  <view class="glass-box glass-fade-in">
+    <!-- 商品标题 -->
+    <view class="product-header">
+      <view class="glass-title">{{productName}}</view>
+    </view>
+    
+    <view class="glass-divider"></view>
+    
+    <!-- 观看进度信息 -->
+    <view class="progress-section">
+      <view class="progress-item">
+        <view class="progress-label">需要观看广告</view>
+        <view class="progress-value">{{videoTimes}}次</view>
+      </view>
+      
+      <view class="progress-item">
+        <view class="progress-label">已观看</view>
+        <view class="progress-value highlight">{{watchedTimes}}次</view>
+      </view>
+      
+      <view class="progress-item">
+        <view class="progress-label">还需观看</view>
+        <view class="progress-value warning">{{remainingTimes}}次</view>
+      </view>
+      
+      <!-- 进度条 -->
+      <view class="progress-bar-container" wx:if="{{videoTimes > 0}}">
+        <view class="glass-progress-container">
+          <view class="glass-progress-bar" style="width: {{watchedTimes / videoTimes * 100}}%"></view>
+        </view>
+        <view class="progress-text">{{watchedTimes}}/{{videoTimes}}</view>
+      </view>
+    </view>
+    
+    <view class="glass-divider"></view>
+    
+    <!-- 商品介绍 -->
+    <view class="intro-section" wx:if="{{introduce}}">
+      <view class="section-title">
+        <text>商品介绍</text>
+        <button class="copy-btn" bindtap="copyIntroduce" size="mini">复制</button>
+      </view>
+      <view class="intro-content">
+        <rich-text nodes="{{introduce}}"></rich-text>
+      </view>
+    </view>
+    
+    <!-- 操作按钮 -->
+    <view class="button-container">
+      <button class="glass-button glass-button-primary" bindtap="handleReceive">
+        {{videoTimes === 0 ? '直接领取卡密' : (remainingTimes > 0 ? '观看广告领取' : '领取卡密')}}
+      </button>
+    </view>
+    
+    <!-- 底部视频广告 -->
+    <view class="ad-container">
+      <ad unit-id="adunit-f92b132d9fffeb2d" ad-type="video" ad-theme="white"></ad>
+    </view>
+  </view>
+</view>
+
+<view class="Pop-ups {{shareShow?'show':''}}">
+  <view class="dialog">
+    <view class="bar">
+      <view class="content">分享提示</view>
+    </view>
+    <view class="glass-text" style="padding:50rpx;">
+      {{shareTip || '还需分享一次好友或群即可领取卡密了'}}
+    </view>
+    <view class="bar">
+      <button bindtap="popupShow" class="action" style="color:var(--glass-text-color);">我不</button>
+      <button bindtap="ok" class="action" openType="share" style="color:var(--glass-primary-color);">分享</button>
+    </view>
+  </view>
+</view>

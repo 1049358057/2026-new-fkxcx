@@ -1,0 +1,263 @@
+.iconfont {
+    margin: 0 20px;
+}
+
+text.total {
+    position: absolute;
+    right: 20px;
+    top: -22px;
+}
+
+.add {
+    position: absolute;
+    right: 10px;
+    top: -35px;
+}
+
+.task-type {
+    margin-top: 5px;
+}
+
+.video-item {
+    position: relative;
+    font-size: 14px;
+    margin-bottom: 20px;
+    padding: 10px;
+    border-radius: 7px;
+    border: 1px solid #dbdbdb;
+    box-shadow: 0 2px 6px 0 hsla(0,0%,0%,0.08);
+    background-image: linear-gradient(to top,#FF7F24 0%,#FFA54F 100%);
+}
+
+.init,.expired {
+    color: grey;
+}
+
+.right {
+    text-align: right;
+    margin-top: 5px;
+    margin-bottom: -5px;
+}
+
+.mini-btn {
+    margin-right: 5px;
+    padding: 0 14px!important;
+    margin-bottom: 5px;
+}
+
+.mini-btn add {
+}
+
+.status {
+    font-size: 14px;
+    padding: 5px 10px;
+}
+
+.status icon {
+    transform: rotate(180deg);
+    margin-right: 3px;
+}
+
+.expired {
+    color: grey;
+}
+
+.item-remove {
+    position: absolute;
+    right: 5px;
+    top: 5px;
+    margin-top: 5px;
+}
+
+.long-text {
+    word-break: break-all;
+    color: #fff;
+}
+
+.long-texts {
+    word-break: break-all;
+    color: #FF3E96;
+}
+
+.highlight {
+    background-color: #ffffc7;
+}
+
+.clear_10 {
+    width: 100%;
+    height: 10px;
+    clear: both;
+}
+
+.page-body {
+    width: 100%;
+    flex-grow: 1;
+    overflow-x: hidden;
+}
+
+.container {
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    box-sizing: border-box;
+}
+
+.checkbox {
+    text-align: left;
+    margin-top: 15px;
+    margin-bottom: 15fpx;
+}
+
+.weui-cells__title {
+    margin-top: .77em;
+    margin-bottom: .3em;
+    padding-left: 15px;
+    padding-right: 15px;
+    color: #999;
+    font-size: 14px;
+}
+
+.is-relative {
+    position: relative;
+}
+
+.page-section {
+    width: 100%;
+}
+
+.page-section-gap {
+    box-sizing: border-box;
+    padding: 0 30rpx;
+}
+
+.btn-area {
+    margin-top: 60rpx;
+    box-sizing: border-box;
+    width: 100%;
+    padding: 0 30rpx;
+}
+
+.navigator-hover button {
+    background-color: #DEDEDE;
+}
+
+.collect-container {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    padding: 0 12%;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: 9999;
+    background-color: rgba(0,0,0,0.8);
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+}
+
+.red-envelope {
+    position: relative;
+    top: 25%;
+    width: 313px;
+    height: 441px;
+}
+
+.gzh {
+  width: 90%;
+  margin: 20rpx auto;
+}
+
+.main-content {
+  padding-bottom: 30rpx;
+}
+
+.user-id {
+  font-size: 24rpx;
+  color: var(--glass-primary-color);
+  margin-left: 20rpx;
+}
+
+.records-list {
+  margin: 20rpx 0;
+}
+
+.record-item {
+  margin-bottom: 30rpx;
+  position: relative;
+  overflow: hidden;
+}
+
+.record-item::before {
+  content: "";
+  position: absolute;
+  top: -20rpx;
+  right: -20rpx;
+  width: 100rpx;
+  height: 100rpx;
+  border-radius: 50%;
+  background: rgba(147, 197, 253, 0.2);
+  z-index: -1;
+}
+
+.record-type {
+  margin-bottom: 15rpx;
+}
+
+.record-detail {
+  margin: 10rpx 0;
+  padding: 8rpx;
+  border-radius: 8rpx;
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.highlight {
+  color: var(--glass-primary-color);
+  font-weight: 500;
+}
+
+.button-group {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 20rpx;
+  flex-wrap: wrap;
+}
+
+.button-group .glass-button {
+  margin-left: 20rpx;
+  margin-bottom: 10rpx;
+  font-size: 24rpx;
+  padding: 10rpx 20rpx;
+}
+
+.empty-notice {
+  text-align: center;
+  padding: 50rpx 0;
+}
+
+.glass-container::before {
+  content: "";
+  position: fixed;
+  top: -100rpx;
+  right: -100rpx;
+  width: 300rpx;
+  height: 300rpx;
+  border-radius: 50%;
+  background: rgba(147, 197, 253, 0.3);
+  z-index: -1;
+}
+
+.glass-container::after {
+  content: "";
+  position: fixed;
+  bottom: -150rpx;
+  left: -150rpx;
+  width: 400rpx;
+  height: 400rpx;
+  border-radius: 50%;
+  background: rgba(59, 130, 246, 0.2);
+  z-index: -1;
+}

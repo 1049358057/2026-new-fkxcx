@@ -1,0 +1,160 @@
+page {
+  --glass-bg-color: #e8f4fc;
+  --glass-card-bg: rgba(255, 255, 255, 0.25);
+  --glass-border: rgba(255, 255, 255, 0.18);
+  --glass-shadow: rgba(31, 38, 135, 0.15);
+  --glass-text-color: #1a365d;
+  --glass-text-light: #4a6fa5;
+  --glass-primary-color: #3b82f6;
+  --glass-primary-light: #60a5fa;
+  --glass-primary-dark: #2563eb;
+  --glass-gradient-start: #93c5fd;
+  --glass-gradient-end: #3b82f6;
+  --glass-danger: #ef4444;
+  --glass-success: #10b981;
+  --glass-warning: #f59e0b;
+  --glass-info: #3b82f6;
+  background-color: var(--glass-bg-color);
+  background-image: linear-gradient(135deg, #dbeafe 0%, #bfdbfe 100%);
+}
+
+.glass-container {
+  min-height: 100vh;
+  padding: 20rpx;
+  background-attachment: fixed;
+}
+
+.glass-box {
+  background: var(--glass-card-bg);
+  border-radius: 16rpx;
+  box-shadow: 0 8rpx 32rpx 0 var(--glass-shadow);
+  backdrop-filter: blur(10rpx);
+  -webkit-backdrop-filter: blur(10rpx);
+  border: 1px solid var(--glass-border);
+  padding: 20rpx;
+  margin: 20rpx 0;
+}
+
+.glass-card {
+  background: var(--glass-card-bg);
+  border-radius: 16rpx;
+  box-shadow: 0 8rpx 32rpx 0 var(--glass-shadow);
+  backdrop-filter: blur(10rpx);
+  -webkit-backdrop-filter: blur(10rpx);
+  border: 1px solid var(--glass-border);
+  padding: 30rpx;
+  margin: 30rpx 0;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.glass-card:active {
+  transform: translateY(2rpx);
+  box-shadow: 0 4rpx 16rpx 0 var(--glass-shadow);
+}
+
+.glass-button {
+  background: var(--glass-card-bg);
+  border-radius: 16rpx;
+  box-shadow: 0 8rpx 32rpx 0 var(--glass-shadow);
+  backdrop-filter: blur(5rpx);
+  -webkit-backdrop-filter: blur(5rpx);
+  border: 1px solid var(--glass-border);
+  padding: 20rpx 30rpx;
+  margin: 20rpx 0;
+  text-align: center;
+  color: var(--glass-text-color);
+  font-weight: 500;
+  transition: all 0.2s ease;
+}
+
+.glass-button:active {
+  transform: translateY(2rpx);
+  box-shadow: 0 4rpx 16rpx 0 var(--glass-shadow);
+}
+
+.glass-button-primary {
+  background: linear-gradient(135deg, var(--glass-gradient-start), var(--glass-gradient-end));
+  color: white;
+  border: none;
+  font-size: 30rpx;
+  padding: 20rpx 30rpx;
+}
+
+.glass-input {
+  background: rgba(255, 255, 255, 0.15);
+  border-radius: 16rpx;
+  box-shadow: 0 4rpx 16rpx 0 rgba(31, 38, 135, 0.1);
+  backdrop-filter: blur(5rpx);
+  -webkit-backdrop-filter: blur(5rpx);
+  border: 1px solid var(--glass-border);
+  padding: 30rpx 40rpx;
+  margin: 30rpx 0;
+  color: var(--glass-text-color);
+  font-size: 32rpx;
+}
+
+.glass-title {
+  color: var(--glass-text-color);
+  font-size: 32rpx;
+  font-weight: 600;
+  margin-bottom: 20rpx;
+  text-align: center;
+}
+
+.glass-text {
+  color: var(--glass-text-color);
+  font-size: 28rpx;
+  line-height: 1.6;
+}
+
+.glass-divider {
+  height: 1px;
+  background-color: var(--glass-border);
+  margin: 20rpx 0;
+}
+
+.glass-progress-container {
+  background: rgba(255, 255, 255, 0.15);
+  border-radius: 10rpx;
+  overflow: hidden;
+  height: 20rpx;
+  margin: 20rpx 0;
+  box-shadow: inset 0 2rpx 4rpx rgba(31, 38, 135, 0.1);
+}
+
+.glass-progress-bar {
+  height: 100%;
+  background: linear-gradient(90deg, var(--glass-gradient-start), var(--glass-gradient-end));
+  border-radius: 10rpx;
+  transition: width 0.3s ease;
+}
+
+.glass-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 60rpx;
+  height: 60rpx;
+  border-radius: 50%;
+  background: var(--glass-card-bg);
+  backdrop-filter: blur(5rpx);
+  -webkit-backdrop-filter: blur(5rpx);
+  border: 1px solid var(--glass-border);
+}
+
+.glass-avatar {
+  width: 120rpx;
+  height: 120rpx;
+  border-radius: 50%;
+  border: 2px solid rgba(255, 255, 255, 0.3);
+  box-shadow: 0 8rpx 32rpx 0 var(--glass-shadow);
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+.glass-fade-in {
+  animation: fadeIn 0.5s ease forwards;
+} 

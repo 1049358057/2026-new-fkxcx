@@ -1,0 +1,19 @@
+<view class="glass-container">
+  <ad unit-id="adunit-f92b132d9fffeb2d" ad-type="video" ad-theme="white" bindload="adLoad" binderror="adError" bindclose="adClose"></ad>
+
+  <view class="glass-box glass-fade-in">
+    <view class="glass-title">精品小程序</view>
+    
+    <view class="glass-divider"></view>
+    
+    <view class="glass-card app-card" bindtap="navigateToMiniProgram" data-appid="{{data.appid1}}" data-path="{{data.path1}}">
+      <image src="{{data.glimg1}}" mode="aspectFill" class="app-image"></image>
+      <view class="app-title">{{data.gl1}}</view>
+    </view>
+    
+    <view class="glass-card app-card" bindtap="navigateToMiniProgram" data-appid="{{data.appid2}}" data-path="{{data.path2}}">
+      <image src="{{data.glimg2}}" mode="aspectFill" class="app-image"></image>
+      <view class="app-title">{{data.gl2}}</view>
+    </view>
+  </view>
+</view>

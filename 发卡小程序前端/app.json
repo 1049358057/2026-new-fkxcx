@@ -1,0 +1,52 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/detail/detail",
+    "pages/record/record",
+    "pages/tutorial/tutorial",
+    "pages/featured/featured"
+  ],
+  "window": {
+    "navigationBarBackgroundColor": "#3b82f6",
+    "navigationBarTextStyle": "white"
+  },
+  "tabBar": {
+    "custom": false,
+    "color": "#dbdbdb",
+    "selectedColor": "#3b82f6",
+    "borderStyle": "black",
+    "backgroundColor": "#ffffff",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "发卡",
+        "iconPath": "images/km.png",
+        "selectedIconPath": "images/kmdj.png"
+      },
+      {
+        "pagePath": "pages/record/record",
+        "text": "记录",
+        "iconPath": "images/jl.png",
+        "selectedIconPath": "images/jldj.png"
+      },
+      {
+        "pagePath": "pages/tutorial/tutorial",
+        "text": "教程",
+        "iconPath": "images/jc.png",
+        "selectedIconPath": "images/jcdj.png"
+      },
+      {
+        "pagePath": "pages/featured/featured",
+        "text": "精品",
+        "iconPath": "images/jc.png",
+        "selectedIconPath": "images/jcdj.png"
+      }
+    ]
+  },
+  "navigateToMiniProgramAppIdList": [
+    "wxc95a195038c8573d",
+    "wx3172e60c8c16e41d",
+    "wxb5eaea6cacc7e49e"
+  ],
+  "sitemapLocation": "sitemap.json"
+}
