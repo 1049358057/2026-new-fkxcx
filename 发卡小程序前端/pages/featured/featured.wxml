@@ -1,5 +1,5 @@
 <view class="glass-container">
-  <ad unit-id="adunit-f92b132d9fffeb2d" ad-type="video" ad-theme="white" bindload="adLoad" binderror="adError" bindclose="adClose"></ad>
+  <ad unit-id="你的广告ID" ad-type="video" ad-theme="white" bindload="adLoad" binderror="adError" bindclose="adClose"></ad>
 
   <view class="glass-box glass-fade-in">
     <view class="glass-title">精品小程序</view>

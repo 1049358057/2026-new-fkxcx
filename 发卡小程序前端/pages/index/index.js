@@ -52,7 +52,7 @@ this. interstitialAd();
       interstitialAd:function(){ 
       if (wx.createInterstitialAd) {
         interstitialAd = wx.createInterstitialAd({
-          adUnitId: "adunit-f92b132d9fffeb2d"
+          adUnitId: "你的广告ID"
         })
         interstitialAd.onLoad(() => {})
         interstitialAd.onError((err) => {})

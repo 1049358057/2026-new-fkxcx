@@ -1,5 +1,5 @@
 <view class="glass-container">
-  <ad unit-id="adunit-f92b132d9fffeb2d" bindload="adLoad" binderror="adError" bindclose="adClose"></ad>
+  <ad unit-id="你的广告ID" bindload="adLoad" binderror="adError" bindclose="adClose"></ad>
   
   <view class="glass-box gzh">
     <official-account></official-account>

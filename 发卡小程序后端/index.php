@@ -31,6 +31,6 @@ HTML;
     <title>灵思发卡</title>
 </head>
 <body> 
-    后台为：http://你的域名/admin<br> 灵思blog <a href="http://blog.ailingsi.top">访问</a> 
+    后台为：http://你的域名/admin<br> 左灵右思 <a href="http://blog.ailingsi.top">访问</a> 
 </body>
 </html>

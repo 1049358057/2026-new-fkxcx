@@ -27,7 +27,7 @@
         <!-- 每两行(4个商品)后插入广告 -->
         <block wx:if="{{(idx + 1) % 4 === 0}}">
           <view class="ad-card">
-            <ad unit-id="adunit-f92b132d9fffeb2d" ad-type="grid" grid-opacity="0.8"></ad>
+            <ad unit-id="你的广告ID" ad-type="grid" grid-opacity="0.8"></ad>
           </view>
         </block>
       </block>

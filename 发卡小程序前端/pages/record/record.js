@@ -9,7 +9,7 @@ Page({
     onLoad: function onLoad(options) {
       if (wx.createInterstitialAd) {
         interstitialAd = wx.createInterstitialAd({
-          adUnitId: 'adunit-edee68f23e961e5e'
+          adUnitId: '你的广告ID'
         })
         interstitialAd.onLoad(() => {console.log('插屏广告加载成功')})
         interstitialAd.onError((err) => {
