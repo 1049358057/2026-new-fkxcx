@@ -6,6 +6,8 @@
 
 ![](https://tc.ailingsi.top/i/2026/06/21/6a37679e8e5fe.jpg)
 
+# 免费获取授权：https://blog.ailingsi.top/2026/01/08/2026%E6%9C%80%E6%96%B0%E8%87%AA%E5%8A%A8%E5%BE%AE%E4%BF%A1%E5%8F%91%E5%8D%A1%E5%B0%8F%E7%A8%8B%E5%BA%8F-%E8%8E%B7%E5%8F%96%E6%95%99%E7%A8%8B/
+
 # 一、功能说明
 
 ## 后台功能
